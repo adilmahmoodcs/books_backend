@@ -137,6 +137,8 @@ GEM
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
+    faker (3.1.0)
+      i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
@@ -315,6 +317,8 @@ GEM
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
+    shoulda-matchers (5.3.0)
+      activesupport (>= 5.2.0)
     sidekiq (6.5.5)
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
@@ -372,6 +376,7 @@ DEPENDENCIES
   derailed
   dotenv-rails
   factory_bot_rails
+  faker
   foreman
   graphiql-rails
   graphql (~> 2.0)
@@ -389,6 +394,7 @@ DEPENDENCIES
   rspec-rails (>= 3.9.0)
   rubocop
   selenium-webdriver
+  shoulda-matchers
   sidekiq
   sprockets-rails
   stimulus-rails

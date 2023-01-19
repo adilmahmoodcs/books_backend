@@ -14,6 +14,7 @@ class Author < ApplicationRecord
   
   # private
   def create_default_webhooks
+    return unless Rails.env.development?
     OutgoingWebhook::ALLOWED_EVENT_TYPES.each do |k, v|
       self.outgoing_webhooks.create!(
         event_type: k, 

@@ -30,6 +30,7 @@ group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails'
   gem 'rspec-rails', '>= 3.9.0'
+  gem "shoulda-matchers"
   gem 'dotenv-rails'
   gem "bullet" # detecting eager loading
   gem "timecop" # time freezing/traveling
@@ -50,4 +51,5 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+  gem "faker"
 end
