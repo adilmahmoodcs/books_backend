@@ -28,6 +28,8 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  webhook:
+    errors:
+    event_already_exist: "is already registered in another webhook against this author."
+    invalid: "is invalid."
